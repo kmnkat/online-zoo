@@ -4,164 +4,220 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online zoo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">PetStory Online</h1>
-      <nav class="header__navigation">
-        <li class="header__navigation-link header__navigation-link--active">
-          About
-        </li>
-        <li class="header__navigation-link">Map</li>
-        <li class="header__navigation-link">Zoos</li>
-        <li class="header__navigation-link">Donate</li>
-        <li class="header__navigation-link">Contact us</li>
-      </nav>
-      <a
-        href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
-        class="header__attribution"
-        >Designed by ©</a
-      >
+      <div class="header__content">
+        <div class="header__content--left">
+          <a href="#">
+            <div class="header__logo">
+              <h1 class="header__title">PetStory Online</h1>
+              <img
+                src="../../assets/icons/bamboo.png"
+                alt=""
+                class="header__logo-img"
+              />
+            </div>
+          </a>
+          <nav class="header__navigation">
+            <li class="header__navigation-link header__navigation-link--active">
+              <a href="#">About</a>
+            </li>
+            <li class="header__navigation-link"><a href="#">Map</a></li>
+            <li class="header__navigation-link"><a href="#">Zoos</a></li>
+            <li class="header__navigation-link"><a href="#">Donate</a></li>
+            <li class="header__navigation-link"><a href="#">Contact us</a></li>
+          </nav>
+        </div>
+        <div class="header__content--right">
+          <a
+            href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
+            class="header__attribution"
+            >Designed by ©</a
+          >
+        </div>
+      </div>
     </header>
     <main>
       <section class="watch-your-fav-anim">
-        <h2 class="watch-your-fav-anim__heading">
-          Watch your
-          <span class="watch-your-fav-anim__heading--decoration"
-            >favourite</span
-          >
-          animal online
-        </h2>
-        <button class="watch-your-fav-anim__button">Watch online</button>
+        <div class="watch-your-fav-anim__content">
+          <div class="watch-your-fav-anim__heading-wrapper">
+            <h2 class="watch-your-fav-anim__heading">
+              Watch your
+              <span class="watch-your-fav-anim__heading--decoration"
+                >favourite</span
+              >
+              animal online
+            </h2>
+          </div>
+          <button class="watch-your-fav-anim__button big-button">
+            Watch online
+          </button>
+        </div>
       </section>
       <section class="the-backstage">
-        <div class="the-backstage__left">
-          <img
-            src="/assets//images/bamboo-cap.png"
-            alt="Bamboo cap"
-            class="the-backstage__image"
-          />
-        </div>
-        <div class="the-backstage__right">
-          <h3 class="the-backstage__heading">
-            The Backstage of the Wilderness World.
-          </h3>
-          <p class="the-backstage__copy">
-            The site was founded on the basis of a volunteer movement to protect
-            and care for animals.
-          </p>
-          <h4 class="the-backstage__subheading">How it works</h4>
-          <p class="the-backstage__copy">
-            The main goal is to help the animals, as well as the nature reserves
-            and zoos where they are kept. We are currently working on video
-            projects targeting pandas in China, eagles on an island near Los
-            Angeles, alligators in Florida and gorillas in the Congo. These have
-            a total of more than 1,500 mammals and reptiles.
-          </p>
+        <div class="the-backstage__content">
+          <div class="the-backstage__left">
+            <img
+              src="../../assets/images/bamboo-cap.png"
+              alt="Bamboo cap"
+              class="the-backstage__image"
+            />
+          </div>
+          <div class="the-backstage__right">
+            <h3 class="the-backstage__heading">
+              The Backstage of the Wilderness World.
+            </h3>
+            <p class="the-backstage__copy">
+              The site was founded on the basis of a volunteer movement to
+              protect and care for animals.
+            </p>
+            <h4 class="the-backstage__subheading">How it works</h4>
+            <p class="the-backstage__copy">
+              The main goal is to help the animals, as well as the nature
+              reserves and zoos where they are kept. We are currently working on
+              video projects targeting pandas in China, eagles on an island near
+              Los Angeles, alligators in Florida and gorillas in the Congo.
+              These have a total of more than 1,500 mammals and reptiles.
+            </p>
+          </div>
         </div>
       </section>
       <section class="animals_cards">
         <div class="animal-card">
           <img
-            src="/assets//images/Rectangle 5-7.png"
+            src="../../assets//images/Rectangle 5-7.png"
             alt="Pandas"
             class="animal-card__image"
           />
-          <h5 class="animal-card__title">giant Pandas</h5>
-          <p class="animal-card__origin">Native to Southwest China</p>
-          <img
-            src="/assets//icons/banana-bamboo_icon.svg"
-            alt="herbivore"
-            class="animal-card__icon"
-          />
+          <div class="animal-card__info">
+            <div class="animal-card__info-text">
+              <h5 class="animal-card__title">giant Pandas</h5>
+              <p class="animal-card__origin">Native to Southwest China</p>
+            </div>
+            <img
+              src="../../assets//icons/banana-bamboo_icon.svg"
+              alt="herbivore"
+              class="animal-card__icon"
+            />
+          </div>
         </div>
 
         <div class="animal-card">
           <img
-            src="/assets//images/Rectangle 5-2.png"
+            src="../../assets//images/Rectangle 5-2.png"
             alt="Eagles"
             class="animal-card__image"
           />
-          <h5 class="animal-card__title">Eagles</h5>
-          <p class="animal-card__origin">Native to South America</p>
-          <img
-            src="/assets//icons/meet-fish_icon.svg"
-            alt="carnivore"
-            class="animal-card__icon"
-          />
+          <div class="animal-card__info">
+            <div class="animal-card__info-text">
+              <h5 class="animal-card__title">Eagles</h5>
+              <p class="animal-card__origin">Native to South America</p>
+            </div>
+            <img
+              src="../../assets//icons/meet-fish_icon.svg"
+              alt="carnivore"
+              class="animal-card__icon"
+            />
+          </div>
         </div>
 
         <div class="animal-card">
           <img
-            src="/assets//images/Rectangle 5-6.png"
+            src="../../assets//images/Rectangle 5-6.png"
             alt="Gorillas"
             class="animal-card__image"
           />
-          <h5 class="animal-card__title">Gorillas</h5>
-          <p class="animal-card__origin">Native to Congo</p>
-          <img
-            src="/assets//icons/banana-bamboo_icon.svg"
-            alt="herbivore"
-            class="animal-card__icon"
-          />
+          <div class="animal-card__info">
+            <div class="animal-card__info-text">
+              <h5 class="animal-card__title">Gorillas</h5>
+              <p class="animal-card__origin">Native to Congo</p>
+            </div>
+            <img
+              src="../../assets//icons/banana-bamboo_icon.svg"
+              alt="herbivore"
+              class="animal-card__icon"
+            />
+          </div>
         </div>
 
         <div class="animal-card">
           <img
-            src="/assets//images/Rectangle 5-3.png"
+            src="../../assets//images/Rectangle 5-3.png"
             alt="Two-toed Sloth"
             class="animal-card__image"
           />
-          <h5 class="animal-card__title">Two-toed Sloth</h5>
-          <p class="animal-card__origin">Mesoamerica, South America</p>
-          <img
-            src="/assets//icons/banana-bamboo_icon.svg"
-            alt="herbivore"
-            class="animal-card__icon"
-          />
+          <div class="animal-card__info">
+            <div class="animal-card__info-text">
+              <h5 class="animal-card__title">Two-toed Sloth</h5>
+              <p class="animal-card__origin">Mesoamerica, South America</p>
+            </div>
+            <img
+              src="../../assets//icons/banana-bamboo_icon.svg"
+              alt="herbivore"
+              class="animal-card__icon"
+            />
+          </div>
         </div>
 
         <div class="animal-card">
           <img
-            src="/assets//images/Rectangle 5-4.png"
+            src="../../assets//images/Rectangle 5-4.png"
             alt="cheetahs"
             class="animal-card__image"
           />
-          <h5 class="animal-card__title">cheetahs</h5>
-          <p class="animal-card__origin">Native to Africa</p>
-          <img
-            src="/assets//icons/meet-fish_icon.svg"
-            alt="carnivore"
-            class="animal-card__icon"
-          />
+          <div class="animal-card__info">
+            <div class="animal-card__info-text">
+              <h5 class="animal-card__title">cheetahs</h5>
+              <p class="animal-card__origin">Native to Africa</p>
+            </div>
+            <img
+              src="../../assets//icons/meet-fish_icon.svg"
+              alt="carnivore"
+              class="animal-card__icon"
+            />
+          </div>
         </div>
 
         <div class="animal-card">
           <img
-            src="/assets//images/Rectangle 5-1.png"
+            src="../../assets//images/Rectangle 5-1.png"
             alt="Penguins"
             class="animal-card__image"
           />
-          <h5 class="animal-card__title">Penguins</h5>
-          <p class="animal-card__origin">Native to Antarctica</p>
-          <img
-            src="/assets//icons/meet-fish_icon.svg"
-            alt="carnivore"
-            class="animal-card__icon"
-          />
+          <div class="animal-card__info">
+            <div class="animal-card__info-text">
+              <h5 class="animal-card__title">Penguins</h5>
+              <p class="animal-card__origin">Native to Antarctica</p>
+            </div>
+            <img
+              src="../../assets//icons/meet-fish_icon.svg"
+              alt="carnivore"
+              class="animal-card__icon"
+            />
+          </div>
         </div>
-        <button class="animal-cards__button">choose your favorite</button>
+        <button class="animal-cards__button big-button margin-top-big">
+          choose your favorite
+        </button>
         <div class="animal-cards__controls">
           <button class="animal-cards__controls-left">
             <img
-              src="/assets/icons/Vector.svg"
+              src="../../assets/icons/Vector.svg"
               alt="left"
               class="animal-cards__controls-left-image"
             />
           </button>
           <button class="animal-cards__controls-right">
             <img
-              src="/assets/icons/Vector(1).svg"
+              src="../../assets/icons/Vector(1).svg"
               alt="right"
               class="animal-cards__controls-right-image"
             />
@@ -187,7 +243,7 @@
             <div class="pick-and-feed__container">
               <div class="pick-and-feed__container-image">
                 <img
-                  src="/assets/icons/pay.svg"
+                  src="../../assets/icons/pay.svg"
                   alt="Pay"
                   class="pick-and-feed__container-icon"
                 />
@@ -197,7 +253,7 @@
           </div>
 
           <img
-            src="/assets//icons/arrow.svg"
+            src="../../assets//icons/arrow.svg"
             alt="arrow"
             class="pick-and-feed__card-arros"
           />
@@ -206,7 +262,7 @@
             <div class="pick-and-feed__container">
               <div class="pick-and-feed__container-image">
                 <img
-                  src="/assets/icons/zoo.svg"
+                  src="../../assets/icons/zoo.svg"
                   alt="Zoo"
                   class="pick-and-feed__container-icon"
                 />
@@ -218,7 +274,7 @@
           </div>
 
           <img
-            src="/assets//icons/arrow.svg"
+            src="../../assets//icons/arrow.svg"
             alt="arrow"
             class="pick-and-feed__card-arros"
           />
@@ -227,7 +283,7 @@
             <div class="pick-and-feed__container">
               <div class="pick-and-feed__container-image">
                 <img
-                  src="/assets/icons/monkey.svg"
+                  src="../../assets/icons/monkey.svg"
                   alt="Monkey"
                   class="pick-and-feed__container-icon"
                 />
@@ -246,7 +302,7 @@
           <div class="testimonial">
             <div class="testimonial__header">
               <img
-                src="/assets/icons/user_icon.svg"
+                src="../../assets/icons/user_icon.svg"
                 alt="User"
                 class="testimonial__image"
               />
@@ -269,7 +325,7 @@
           <div class="testimonial">
             <div class="testimonial__header">
               <img
-                src="/assets/icons/user_icon.svg"
+                src="../../assets/icons/user_icon.svg"
                 alt="User"
                 class="testimonial__image"
               />
@@ -297,7 +353,7 @@
           <div class="testimonial">
             <div class="testimonial__header">
               <img
-                src="/assets/icons/user_icon.svg"
+                src="../../assets/icons/user_icon.svg"
                 alt="User"
                 class="testimonial__image"
               />
@@ -323,7 +379,7 @@
           <div class="testimonial">
             <div class="testimonial__header">
               <img
-                src="/assets/icons/user_icon.svg"
+                src="../../assets/icons/user_icon.svg"
                 alt="User"
                 class="testimonial__image"
               />
