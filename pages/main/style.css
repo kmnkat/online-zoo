@@ -68,7 +68,8 @@ body {
 .watch-your-fav-anim__content,
 .header__content,
 .the-backstage__content,
-.animals_cards {
+.animals_cards,
+.pick-and-feed__frame {
   width: var(--section-height);
 }
 
@@ -90,9 +91,21 @@ body {
   color: white;
 }
 
-.big-button:hover {
+.big-button:hover,
+.btn-square:hover {
   background-color: var(--green);
   background-image: none;
+}
+
+.btn-square {
+  background-image: var(--gradient-orange);
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* HEADER */
@@ -256,6 +269,10 @@ body {
 }
 
 /* ANIMALS CARDS */
+.animals-cards__background {
+  background: url(../../assets/images/palm_foto.png) left bottom no-repeat,
+    url(../../assets/images/strelitzia\ 1.png) right bottom no-repeat;
+}
 .animals_cards {
   margin: 0 auto;
   padding: 10rem 0;
@@ -281,8 +298,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: red;
-  width: 120%;
+
+  width: 115%;
   display: flex;
   justify-content: space-between;
 }
@@ -322,4 +339,71 @@ body {
 
 .animal-cards__button {
   margin: 5rem auto 0 auto;
+}
+
+.animal-card__image-wrapper {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+.animal-card__image:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  animation: transform 1s ease;
+}
+
+/* PICK AND FEED */
+.pick-and-feed {
+  background-image: var(--gradient-light-orange);
+  padding: 10rem 0;
+}
+
+.pick-and-feed__frame {
+  box-sizing: border-box;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  margin: 0rem auto;
+  padding: 5rem 10rem;
+  text-align: center;
+}
+
+.pick-and-feed__title {
+  color: var(--orange-lighter);
+  font-size: 4.8rem;
+  font-weight: normal;
+  padding-bottom: 3.5rem;
+}
+.pick-and-feed__subtitle {
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: normal;
+  padding-bottom: 3.5rem;
+}
+
+.pick-and-feed__copy {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.pick-and-feed__copy--bold {
+  font-weight: bolder;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.pick-and-feed__widget {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pick-and-feed__container-image {
+  background-color: white;
+  width: 16.8rem;
+  height: 16.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
