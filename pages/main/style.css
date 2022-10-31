@@ -493,3 +493,9 @@ body {
   overflow: hidden;
   padding: 2rem;
 }
+
+/*footer */
+
+.footer {
+  background-color: black;
+}
