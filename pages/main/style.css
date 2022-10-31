@@ -69,7 +69,8 @@ body {
 .header__content,
 .the-backstage__content,
 .animals_cards,
-.pick-and-feed__frame {
+.pick-and-feed__frame,
+.testimonials {
   width: var(--section-height);
 }
 
@@ -91,8 +92,21 @@ body {
   color: white;
 }
 
+.btn-rectangular {
+  min-width: 30rem;
+  min-height: 5.4rem;
+  text-transform: uppercase;
+  display: block;
+  border-radius: 5px;
+  background-image: var(--gradient-orange);
+  border: none;
+  font-weight: 500;
+  color: white;
+}
+
 .big-button:hover,
-.btn-square:hover {
+.btn-square:hover,
+.btn-rectangular:hover {
   background-color: var(--green);
   background-image: none;
 }
@@ -122,6 +136,19 @@ body {
   margin: -2px;
   border-radius: inherit;
   background: var(--gradient-orange);
+}
+
+.testimonial:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: var(--gradient-light-orange);
 }
 
 /* HEADER */
@@ -437,4 +464,32 @@ body {
 }
 .pick-and-feed__button {
   margin: 1rem auto;
+}
+
+.testimonials-background {
+  background: url(../../assets/images/leav_foto.png) bottom right no-repeat;
+}
+
+.testimonials {
+  margin: 15rem auto;
+  text-align: center;
+}
+
+.testiomonials__heading {
+  font-size: 3.6rem;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.testimonial {
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--gray-light);
+  width: 26.8rem;
+  max-height: 39rem;
+  overflow: hidden;
+  padding: 2rem;
 }
