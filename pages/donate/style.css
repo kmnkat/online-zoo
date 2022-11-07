@@ -189,6 +189,7 @@ body {
 
 .header__navigation-link > *:link,
 .header__navigation-link > *:active,
+.header__navigation-link > *:visited,
 .header__attribution {
   text-decoration: none;
   color: white;
