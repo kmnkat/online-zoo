@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online zoo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__content--left">
+          <a href="#">
+            <div class="header__logo">
+              <h1 class="header__title">PetStory Online</h1>
+              <img
+                src="../../assets/icons/bamboo.png"
+                alt=""
+                class="header__logo-img"
+              />
+            </div>
+          </a>
+          <nav class="header__navigation">
+            <li class="header__navigation-link header__navigation-link--active">
+              <a href="#">About</a>
+            </li>
+            <li class="header__navigation-link"><a href="#">Map</a></li>
+            <li class="header__navigation-link"><a href="#">Zoos</a></li>
+            <li class="header__navigation-link"><a href="#">Donate</a></li>
+            <li class="header__navigation-link"><a href="#">Contact us</a></li>
+          </nav>
+        </div>
+        <div class="header__content--right">
+          <a
+            href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
+            class="header__attribution"
+            >Designed by ©</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="donate__panda-header"></section>
+      <section class="donate">
+        <div class="donate__purpose">
+          <h1 class="donate__header-big">
+            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+          </h1>
+          <p class="donate__copy">
+            Even though the Zoo has been able to reopen, we are at a greatly
+            reduced capacity with educational programs and public and private
+            events cancelled or postponed for additional months. We need you now
+            more than ever to help ensure that we overcome these challenges. We
+            have been actively raising funds in the community, and we are
+            grateful for the generosity. But much more support is still needed,
+            and we need your help! Please consider a gift today – no matter what
+            size – to help us sustain our mission.
+          </p>
+          <h2 class="donate__header-smaller">Donation Information</h2>
+        </div>
+        <div class="donate__calculator">
+          <h1 class="donate__header-big-orange">Pick and feed a friend</h1>
+          <p class="donate__copy--big">
+            We know the animals bring you joy, and in these extraordinary times,
+            we’re glad.
+          </p>
+          <div class="donate__calculator-panda">
+            <div class="calculator-panda__number">
+              <span class="calculator-panda__number-number">4</span>
+              <span class="calculator-panda__number-per"
+                >Panda diet for the day.</span
+              >
+            </div>
+            <div class="calculator-panda__multiplication">
+              <img
+                src="../../assets/icons/x.svg"
+                alt="X"
+                class="calculator-panda__multiplication-left"
+              />
+              <img
+                src="../../assets/icons/x.svg"
+                alt="X"
+                class="calculator-panda__multiplication-right"
+              />
+            </div>
+            <div class="calculator-panda__panda-icon">
+              <img
+                src="../../assets/icons/animals-widget.svg"
+                alt="Panda"
+                class="calculator-panda__panda-icon-image"
+              />
+            </div>
+          </div>
+          <form action="#" class="donate__form">
+            <div class="donate__form-progress">
+              <div class="donate__form-line"></div>
+              <div class="donate__form-dots">
+                <div class="donate__form-dot"></div>
+                <div class="donate__form-dot donate__form-dot--chosen"></div>
+                <div class="donate__form-dot"></div>
+                <div class="donate__form-dot"></div>
+                <div class="donate__form-dot"></div>
+                <div class="donate__form-dot"></div>
+                <div class="donate__form-dot"></div>
+              </div>
+              <div class="donate__form-labels">
+                <div class="donate__form-label">$2000</div>
+                <div class="donate__form-label donate__form-label--chosen">
+                  $1000
+                </div>
+                <div class="donate__form-label">$500</div>
+                <div class="donate__form-label">$100</div>
+                <div class="donate__form-label">$50</div>
+                <div class="donate__form-label">$25</div>
+              </div>
+            </div>
+            <input type="number" class="donate__form-another-am" />
+            <input
+              type="radio"
+              id="monthly"
+              name="donate__form-frequency"
+              value="monthly"
+            />
+            <label for="monthly">Monthly</label>
+            <input type="radio" id="once" name="fav_language" value="once" />
+            <label for="once">Once</label>
+            <button class="big-button" type="submit">Feed a friend now</button>
+            <p class="donate__form-share">
+              Share with your friends on social networks
+            </p>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <a href="#">
+          <div class="header__logo">
+            <p class="header__title">PetStory Online</p>
+            <img
+              src="../../assets/icons/bamboo.png"
+              alt=""
+              class="header__logo-img"
+            />
+          </div>
+        </a>
+        <button class="footer__button btn-rectangular">
+          Donate for volunteers
+        </button>
+        <input type="email" placeholder="Enter your email" required />
+        <input type="Submit" />
+        <div class="header__content--left">
+          <nav class="header__navigation">
+            <li class="header__navigation-link header__navigation-link--active">
+              <a href="#">About</a>
+            </li>
+            <li class="header__navigation-link"><a href="#">Map</a></li>
+            <li class="header__navigation-link"><a href="#">Zoos</a></li>
+            <li class="header__navigation-link"><a href="#">Donate</a></li>
+            <li class="header__navigation-link"><a href="#">Contact us</a></li>
+          </nav>
+        </div>
+        <div class="header__content--right">
+          <a
+            href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
+            class="header__attribution"
+            >Designed by ©</a
+          >
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
