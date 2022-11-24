@@ -46,6 +46,10 @@
   padding-left: 1rem;
 }
 
+.input-footer:invalid {
+  border: 1px var(--orange-dark) solid;
+}
+
 .subscribe-btn {
   min-width: 12.9rem;
   min-height: 4.2rem;

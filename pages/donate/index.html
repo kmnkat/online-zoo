@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__content  FONT-medium-font-weight">
+      <div class="header__content FONT-medium-font-weight">
         <div class="header__content--left">
           <a href="https://kmnkat.github.io/online-zoo/pages/main/">
             <div class="header__logo">
@@ -72,13 +72,13 @@
     </header>
     <main>
       <section class="donate__panda-header"></section>
-      <section class="donate ">
+      <section class="donate">
         <div class="donate__content center-block-content margin-after-bigger">
           <div class="donate__purpose">
             <h1 class="donate__header-big FONT-header-big margin-after-middle">
               THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
             </h1>
-            <p class="donate__copy margin-after-big ">
+            <p class="donate__copy margin-after-big">
               Even though the Zoo has been able to reopen, we are at a greatly
               reduced capacity with educational programs and public and private
               events cancelled or postponed for additional months. We need you
@@ -88,12 +88,18 @@
               still needed, and we need your help! Please consider a gift today
               – no matter what size – to help us sustain our mission.
             </p>
-            <h2 class="donate__header-smaller FONT-subheader-big  margin-after-big">
+            <h2
+              class="donate__header-smaller FONT-subheader-big margin-after-big"
+            >
               Donation Information
             </h2>
           </div>
           <div class="donate__calculator">
-            <h1 class="donate__header-big-orange FONT-subheader-big FONT-subheader-superbig margin-after-middle">Pick and feed a friend</h1>
+            <h1
+              class="donate__header-big-orange FONT-subheader-big FONT-subheader-superbig margin-after-middle"
+            >
+              Pick and feed a friend
+            </h1>
             <p class="donate__copy--big FONT-big-copy">
               We know the animals bring you joy, and in these extraordinary
               times, we’re glad.
@@ -130,89 +136,124 @@
               <p class="form__descr margin-after-middle">Amount</p>
               <div class="donate__form-progress">
                 <div class="donate__progress-bg">
-                  <div class="donate__form-line"></div>
-                  <div class="donate__form-dots">
-                    <div class="dot-clickable">
-                      <div class="donate__form-dot"></div>
-                    </div>
-                    <div class="dot-clickable">
-                      <div
-                        class="donate__form-dot donate__form-dot--chosen"
-                      ></div>
-                    </div>
-                    <div class="dot-clickable">
-                      <div class="donate__form-dot"></div>
-                    </div>
-                    <div class="dot-clickable">
-                      <div class="donate__form-dot"></div>
-                    </div>
-                    <div class="dot-clickable">
-                      <div class="donate__form-dot"></div>
-                    </div>
-                    <div class="dot-clickable">
-                      <div class="donate__form-dot"></div>
-                    </div>
-                    <div class="dot-clickable">
-                      <div class="donate__form-dot"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="donate__form-labels">
-                  <div class="donate__form-label">$2000</div>
-                  <div class="donate__form-label donate__form-label--chosen">
-                    $1000
-                  </div>
-                  <div class="donate__form-label">$500</div>
-                  <div class="donate__form-label">$250</div>
-                  <div class="donate__form-label">$100</div>
-                  <div class="donate__form-label">$50</div>
-                  <div class="donate__form-label">$25</div>
+                  <span class="donate__form-line"></span>
                 </div>
               </div>
-              <div class="input-wrapper margin-after-middle">
+              <div class="donate__form-dots margin-after-middle">
+                <div class="dot-clickable">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$5000</p>
+                </div>
+
+                <div class="dot-clickable">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$2000</p>
+                </div>
+                <div class="dot-clickable donate__form-dot--chosen">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$1000</p>
+                </div>
+                <div class="dot-clickable">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$500</p>
+                </div>
+                <div class="dot-clickable">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$250</p>
+                </div>
+                <div class="dot-clickable">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$100</p>
+                </div>
+                <div class="dot-clickable">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$50</p>
+                </div>
+                <div class="dot-clickable">
+                  <span class="donate__form-dot-clickable-area">
+                    <span class="donate__form-dot"></span
+                  ></span>
+                  <p class="donate__form-label">$25</p>
+                </div>
+              </div>
+
+              <div class="input-wrapper-currency-position margin-after-middle">
                 <input
                   type="number"
                   placeholder="Another amount"
-                  class="donate__form-another-am input-field  input-field--alternative"
+                  class="donate__form-another-am input-field input-field--alternative"
+                  min="1"
+                  max="9999"
                 />
-                <p
-                  class="donate__form-currency"
-               >$</p>
+                <p class="donate__form-currency">$</p>
               </div>
 
               <div class="donate__form-radio-btns">
-                <div class="donate__form-radio-btn"> <input
-                  type="radio"
-                  id="monthly"
-                  name="donate__form-frequency"
-                  value="monthly"
-                  
-                />
-                <label for="monthly">Monthly</label></div>
                 <div class="donate__form-radio-btn">
-                <input
-                  type="radio"
-                  id="once"
-                  checked="checked"
-                  name="donate__form-frequency"
-                  value="once"
-                />
-                <label for="once"> <span class="checkmark"></span> Once</label></div>
+                  <label for="monthly" class="donate__form-radio-btn container"
+                    >Monthly
+                    <input
+                      type="radio"
+                      id="monthly"
+                      checked="checked"
+                      name="donate__form-frequency"
+                      value="monthly"
+                      class="donate__form-radio-btn-checkbox checkbox"
+                    />
+                    <span
+                      class="donate__form-radio-btn-checkmark checkmark"
+                    ></span>
+                  </label>
+                </div>
+                <div class="donate__form-radio-btn">
+                  <label for="once" class="donate__form-radio-btn container"
+                    >Once
+                    <input
+                      checked="checked"
+                      type="radio"
+                      id="once"
+                      checked="checked"
+                      name="donate__form-frequency"
+                      value="once"
+                      class="donate__form-radio-btn-checkbox checkbox"
+                    />
+                    <span
+                      class="donate__form-radio-btn-checkmark checkmark"
+                    ></span>
+                  </label>
+                </div>
               </div>
               <button class="big-button donate__btn" type="submit">
                 Feed a friend now
               </button>
-              <p class="donate__form-share">
-                Share with your friends on social networks
-              </p>
             </form>
+            <p class="donate__form-share FONT-short-description">
+              Share with your friends on social networks
+            </p>
           </div>
         </div>
       </section>
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-content__upper">
-            <a class="nav-link" href="https://kmnkat.github.io/online-zoo/pages/main/">
+            <a
+              class="nav-link"
+              href="https://kmnkat.github.io/online-zoo/pages/main/"
+            >
               <div class="header__logo">
                 <p class="header__title">PetStory Online</p>
                 <img
@@ -230,18 +271,20 @@
                 required
                 class="input-footer input-field"
               />
-              <button type="Submit" class="subscribe-btn submit-btn" />Submit</button>
+              <button type="Submit" class="subscribe-btn submit-btn">
+                Submit
+              </button>
             </form>
           </div>
           <div class="footer-content__middle">
             <a href="https://kmnkat.github.io/online-zoo/pages/donate/"
-              ><button class="footer__button btn-rectangular ">
+              ><button class="footer__button btn-rectangular">
                 Donate for volunteers
               </button></a
             >
           </div>
           <div class="footer-content__bottom">
-            <div class="bottom__socials ">
+            <div class="bottom__socials">
               <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
                   <img
@@ -250,7 +293,7 @@
                     class="social-icon"
                   />
                 </div>
-                <a class="social-name" href=#>Facebook</a>
+                <a class="social-name" href="#">Facebook</a>
               </div>
               <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
@@ -260,7 +303,7 @@
                     class="social-icon"
                   />
                 </div>
-                <a class="social-name" href=#>Twitter</a>
+                <a class="social-name" href="#">Twitter</a>
               </div>
               <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
@@ -270,7 +313,7 @@
                     class="social-icon"
                   />
                 </div>
-                <a class="social-name" href=#>Instagram</a>
+                <a class="social-name" href="#">Instagram</a>
               </div>
               <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
@@ -280,42 +323,48 @@
                     class="social-icon"
                   />
                 </div>
-                <a class="social-name" href=#>YouTube</a>
+                <a class="social-name" href="#">YouTube</a>
               </div>
             </div>
             <div class="bottom__nav">
-              
-                <nav class="header__navigation ">
-                  <li class="header__navigation-link">
-                    <a class="nav-link" href="https://kmnkat.github.io/online-zoo/pages/main/"
-                      >About</a
-                    >
-                  </li>
-                  <li class="header__navigation-link"><a  class="nav-link" href="#">Map</a></li>
-                  <li class="header__navigation-link"><a  class="nav-link" href="#">Zoos</a></li>
-                  <li class="header__navigation-link">
-                    <a  class="nav-link active-page" href="https://kmnkat.github.io/online-zoo/pages/donate/"
-                      >Donate</a
-                    >
-                  </li>
-                  <li class="header__navigation-link">
-                    <a  class="nav-link" href="#">Contact us</a>
-                  </li>
-                </nav>
-              
+              <nav class="header__navigation">
+                <li class="header__navigation-link">
+                  <a
+                    class="nav-link"
+                    href="https://kmnkat.github.io/online-zoo/pages/main/"
+                    >About</a
+                  >
+                </li>
+                <li class="header__navigation-link">
+                  <a class="nav-link" href="#">Map</a>
+                </li>
+                <li class="header__navigation-link">
+                  <a class="nav-link" href="#">Zoos</a>
+                </li>
+                <li class="header__navigation-link">
+                  <a
+                    class="nav-link active-page"
+                    href="https://kmnkat.github.io/online-zoo/pages/donate/"
+                    >Donate</a
+                  >
+                </li>
+                <li class="header__navigation-link">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </nav>
             </div>
             <div class="botton__design">
-              <div class=" FONT-light">
+              <div class="FONT-light">
                 <a
                   href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
                   class="header__attribution nav-link"
                   >Designed by Alisa Samborskaya</a
                 >
               </div>
-              <div class=" FONT-light">
+              <div class="FONT-light">
                 <a
                   href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
-                  class="header__attribution  nav-link"
+                  class="header__attribution nav-link"
                   >©RSSchool & ©Yem Digital 2021</a
                 >
               </div>

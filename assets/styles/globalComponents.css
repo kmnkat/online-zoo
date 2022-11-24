@@ -29,7 +29,8 @@
 
 /*inputs */
 
-.input-field {
+.input-field,
+.input-field:valid {
   -moz-appearance: textfield;
   background-color: transparent;
   box-shadow: none;
@@ -40,6 +41,10 @@
   outline: none;
 }
 
+.input-field:invalid {
+  border: 1px var(--red) solid;
+}
+
 .input-field:hover,
 .input-field:focus {
   border-color: var(--green);
@@ -48,4 +53,73 @@
 .input-field--alternative {
   border: 1px var(--gray) solid;
   min-height: 5.4rem;
+}
+
+/* RADIO BTNS */
+
+/* Customize the label (the container) */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: calc(var(--normal-font) * 1.5);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* not yet checked */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--normal-font);
+  width: var(--normal-font);
+  border-radius: 50%;
+  background-color: transparent;
+  border: solid 1px var(--orange-dark);
+  box-sizing: border-box;
+}
+
+/* hover */
+.container:hover input ~ .checkmark {
+  background-color: var(--green);
+  border: none;
+}
+
+/* checked */
+.container input:checked ~ .checkmark {
+  background-color: transparent;
+  border: solid 1px var(--orange-dark);
+  box-sizing: border-box;
+}
+
+/* Create the indicator*/
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* indicator (dot/circle) */
+.container input:checked ~ .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: calc(var(--normal-font) - 6px);
+  height: calc(var(--normal-font) - 6px);
+  border-radius: 50%;
+  background: var(--orange-dark);
+  display: flex;
 }
