@@ -1,0 +1,41 @@
+.FONT-medium-font-weight {
+  font-weight: medium;
+}
+
+.FONT-normal {
+  font-size: var(--normal-font);
+}
+li {
+  list-style: none;
+}
+
+.FONT-light {
+  font-weight: 100;
+}
+
+.FONT-header-big {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: var(--big-font);
+  line-height: 130%;
+  color: white;
+}
+
+.FONT-subheader-big {
+  color: var(--orange-lighter);
+  font-weight: 400;
+  font-size: var(--big-font);
+  line-height: 130%;
+  font-size: var(--big-font);
+}
+
+.FONT-subheader-superbig {
+  font-size: var(--superbig-font);
+  line-height: 120%;
+}
+
+.FONT-big-copy {
+  font-size: var(--bigger-font);
+  font-weight: 400;
+  line-height: 120%;
+}

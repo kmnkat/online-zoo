@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online zoo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../assets/styles/variables.css" />
+    <link rel="stylesheet" href="../../assets/styles/styles.css" />
+    <link rel="stylesheet" href="../../assets/styles/globalComponents.css" />
+    <link rel="stylesheet" href="../../assets/styles/globalSections.css" />
+    <link rel="stylesheet" href="../../assets/styles/layout.css" />
+    <link rel="stylesheet" href="../../assets/styles/typography.css" />
+
+    <link rel="stylesheet" href="../../assets/styles/buttonsAndLinks.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,11 +22,11 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
+      <div class="header__content  FONT-medium-font-weight">
         <div class="header__content--left">
           <a href="https://kmnkat.github.io/online-zoo/pages/main/">
             <div class="header__logo">
-              <h1 class="header__title">PetStory Online</h1>
+              <h1 class="header__title nav-link">PetStory Online</h1>
               <img
                 src="../../assets/icons/bamboo.png"
                 alt=""
@@ -27,23 +35,34 @@
             </div>
           </a>
           <nav class="header__navigation">
-            <li class="header__navigation-link header__navigation-link--active">
-              <a href="https://kmnkat.github.io/online-zoo/pages/main/"
+            <li class="header__navigation-link">
+              <a
+                class="nav-link"
+                href="https://kmnkat.github.io/online-zoo/pages/main/"
                 >About</a
               >
             </li>
-            <li class="header__navigation-link"><a href="#">Map</a></li>
-            <li class="header__navigation-link"><a href="#">Zoos</a></li>
             <li class="header__navigation-link">
-              <a href="https://kmnkat.github.io/online-zoo/pages/donate/"
+              <a class="nav-link" href="#">Map</a>
+            </li>
+            <li class="header__navigation-link">
+              <a class="nav-link" href="#">Zoos</a>
+            </li>
+            <li class="header__navigation-link">
+              <a
+                class="nav-link active-page"
+                href="https://kmnkat.github.io/online-zoo/pages/donate/"
                 >Donate</a
               >
             </li>
-            <li class="header__navigation-link"><a href="#">Contact us</a></li>
+            <li class="header__navigation-link">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
           </nav>
         </div>
         <div class="header__content--right">
           <a
+            class="nav-link"
             href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
             class="header__attribution"
             >Designed by ©</a
@@ -53,13 +72,13 @@
     </header>
     <main>
       <section class="donate__panda-header"></section>
-      <section class="donate">
-        <div class="donate__content">
+      <section class="donate ">
+        <div class="donate__content center-block-content margin-after-bigger">
           <div class="donate__purpose">
-            <h1 class="donate__header-big">
+            <h1 class="donate__header-big FONT-header-big margin-after-middle">
               THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
             </h1>
-            <p class="donate__copy">
+            <p class="donate__copy margin-after-big ">
               Even though the Zoo has been able to reopen, we are at a greatly
               reduced capacity with educational programs and public and private
               events cancelled or postponed for additional months. We need you
@@ -69,13 +88,13 @@
               still needed, and we need your help! Please consider a gift today
               – no matter what size – to help us sustain our mission.
             </p>
-            <h2 class="donate__header-big donate__header-smaller">
+            <h2 class="donate__header-smaller FONT-subheader-big  margin-after-big">
               Donation Information
             </h2>
           </div>
           <div class="donate__calculator">
-            <h1 class="donate__header-big-orange">Pick and feed a friend</h1>
-            <p class="donate__copy--big">
+            <h1 class="donate__header-big-orange FONT-subheader-big FONT-subheader-superbig margin-after-middle">Pick and feed a friend</h1>
+            <p class="donate__copy--big FONT-big-copy">
               We know the animals bring you joy, and in these extraordinary
               times, we’re glad.
             </p>
@@ -108,7 +127,7 @@
             </div>
 
             <form action="#" class="donate__form">
-              <p class="form__descr">Amount</p>
+              <p class="form__descr margin-after-middle">Amount</p>
               <div class="donate__form-progress">
                 <div class="donate__progress-bg">
                   <div class="donate__form-line"></div>
@@ -150,28 +169,27 @@
                   <div class="donate__form-label">$25</div>
                 </div>
               </div>
-              <div class="input-wrapper">
+              <div class="input-wrapper margin-after-middle">
                 <input
                   type="number"
                   placeholder="Another amount"
-                  class="donate__form-another-am"
+                  class="donate__form-another-am input-field  input-field--alternative"
                 />
-                <img
-                  src="../../assets//icons/dollar.svg"
-                  alt="dollar"
-                  class="currencyinput"
-                />
+                <p
+                  class="donate__form-currency"
+               >$</p>
               </div>
 
-              <div class="radio-btns">
-                <input
+              <div class="donate__form-radio-btns">
+                <div class="donate__form-radio-btn"> <input
                   type="radio"
                   id="monthly"
                   name="donate__form-frequency"
                   value="monthly"
-                  maxlength="10"
+                  
                 />
-                <label for="monthly">Monthly</label>
+                <label for="monthly">Monthly</label></div>
+                <div class="donate__form-radio-btn">
                 <input
                   type="radio"
                   id="once"
@@ -179,7 +197,7 @@
                   name="donate__form-frequency"
                   value="once"
                 />
-                <label for="once"> <span class="checkmark"></span> Once</label>
+                <label for="once"> <span class="checkmark"></span> Once</label></div>
               </div>
               <button class="big-button donate__btn" type="submit">
                 Feed a friend now
@@ -194,7 +212,7 @@
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-content__upper">
-            <a href="https://kmnkat.github.io/online-zoo/pages/main/">
+            <a class="nav-link" href="https://kmnkat.github.io/online-zoo/pages/main/">
               <div class="header__logo">
                 <p class="header__title">PetStory Online</p>
                 <img
@@ -210,21 +228,21 @@
                 type="email"
                 placeholder="Enter your email"
                 required
-                class="input-footer"
+                class="input-footer input-field"
               />
-              <input type="Submit" class="subscribe-btn" />
+              <button type="Submit" class="subscribe-btn submit-btn" />Submit</button>
             </form>
           </div>
           <div class="footer-content__middle">
             <a href="https://kmnkat.github.io/online-zoo/pages/donate/"
-              ><button class="footer__button btn-rectangular">
+              ><button class="footer__button btn-rectangular ">
                 Donate for volunteers
               </button></a
             >
           </div>
           <div class="footer-content__bottom">
-            <div class="bottom__socials">
-              <div class="one-social">
+            <div class="bottom__socials ">
+              <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
                   <img
                     src="../../assets/icons/facebook.svg"
@@ -232,9 +250,9 @@
                     class="social-icon"
                   />
                 </div>
-                <p class="social-name">Facebook</p>
+                <a class="social-name" href=#>Facebook</a>
               </div>
-              <div class="one-social">
+              <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
                   <img
                     src="../../assets/icons/twitter.svg"
@@ -242,9 +260,9 @@
                     class="social-icon"
                   />
                 </div>
-                <p class="social-name">Twitter</p>
+                <a class="social-name" href=#>Twitter</a>
               </div>
-              <div class="one-social">
+              <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
                   <img
                     src="../../assets/icons/instagram.svg"
@@ -252,9 +270,9 @@
                     class="social-icon"
                   />
                 </div>
-                <p class="social-name">Instagram</p>
+                <a class="social-name" href=#>Instagram</a>
               </div>
-              <div class="one-social">
+              <div class="one-social icon-and-text">
                 <div class="icon-wrapper">
                   <img
                     src="../../assets/icons/youtube.svg"
@@ -262,42 +280,42 @@
                     class="social-icon"
                   />
                 </div>
-                <p class="social-name">YouTube</p>
+                <a class="social-name" href=#>YouTube</a>
               </div>
             </div>
             <div class="bottom__nav">
-              <div class="header__content--left">
-                <nav class="header__navigation">
+              
+                <nav class="header__navigation ">
                   <li class="header__navigation-link">
-                    <a href="https://kmnkat.github.io/online-zoo/pages/main/"
+                    <a class="nav-link" href="https://kmnkat.github.io/online-zoo/pages/main/"
                       >About</a
                     >
                   </li>
-                  <li class="header__navigation-link"><a href="#">Map</a></li>
-                  <li class="header__navigation-link"><a href="#">Zoos</a></li>
+                  <li class="header__navigation-link"><a  class="nav-link" href="#">Map</a></li>
+                  <li class="header__navigation-link"><a  class="nav-link" href="#">Zoos</a></li>
                   <li class="header__navigation-link">
-                    <a href="https://kmnkat.github.io/online-zoo/pages/donate/"
+                    <a  class="nav-link active-page" href="https://kmnkat.github.io/online-zoo/pages/donate/"
                       >Donate</a
                     >
                   </li>
                   <li class="header__navigation-link">
-                    <a href="#">Contact us</a>
+                    <a  class="nav-link" href="#">Contact us</a>
                   </li>
                 </nav>
-              </div>
+              
             </div>
             <div class="botton__design">
-              <div class="header__content--right footer-copyrights">
+              <div class=" FONT-light">
                 <a
                   href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
-                  class="header__attribution"
+                  class="header__attribution nav-link"
                   >Designed by Alisa Samborskaya</a
                 >
               </div>
-              <div class="header__content--right footer-copyrights">
+              <div class=" FONT-light">
                 <a
                   href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
-                  class="header__attribution"
+                  class="header__attribution  nav-link"
                   >©RSSchool & ©Yem Digital 2021</a
                 >
               </div>

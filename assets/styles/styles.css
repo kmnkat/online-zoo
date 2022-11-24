@@ -1,230 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-/* COLORS  -----------------------------------------------------------*/
-
-:root {
-  --yellow: #ffee2e;
-  --black-blue: #333b41;
-  --green: #4b9200;
-  --white-frosted-glass: #fdfdff;
-  --gray-light: #f1f3f2;
-  --gray: #767474;
-  --gray-smoky: #ababab;
-  --red: #d31414;
-
-  --orange-dark: #f9804b;
-  --orange-lighter: #fe9013;
-
-  --gradient-orange: linear-gradient(
-    113.96deg,
-    var(--orange-dark) 1.49%,
-    var(--orange-lighter) 101.44%
-  );
-  /* GRADIENTS ----------------------------------------------------------- */
-
-  --gradient-light-orange: linear-gradient(
-      315.75deg,
-      rgba(254, 210, 144, 0.7) 30.06%,
-      #febdab 100.95%,
-      rgba(254, 210, 144, 0.7) 106.36%
-    ),
-    linear-gradient(
-      315.75deg,
-      rgba(254, 189, 171, 0.74) 30.06%,
-      rgba(243, 169, 248, 0.66) 50.74%,
-      #e0d8f0 80.49%,
-      #eaf7fe 127.9%,
-      #eaf7fe 149.54%
-    ),
-    linear-gradient(
-      315.75deg,
-      rgba(254, 189, 171, 0.74) 30.06%,
-      rgba(243, 169, 248, 0.66) 50.74%,
-      #e0d8f0 80.49%,
-      #eaf7fe 127.9%,
-      #eaf7fe 149.54%
-    );
-
-  /* HEIGHTS  -----------------------------------------------------------*/
-
-  --section-height: 116.1rem;
-  --normal-font: 1.6rem;
-}
-
-body {
-  font-family: "Roboto", Arial, sans-serif;
-  color: var(--black-blue);
-}
-/* sections width, margins */
-.watch-your-fav-anim__content,
-.header__content,
-.the-backstage__content,
-.animals_cards,
-.pick-and-feed__frame,
-.testimonials {
-  width: var(--section-height);
-}
-
-.margin-top-big {
-  margin-top: 5rem;
-}
-
-/* buttons */
-
-.big-button {
-  min-width: 30rem;
-  min-height: 5.4rem;
-  text-transform: uppercase;
-  display: block;
-  border-radius: 2.5rem;
-  background-image: var(--gradient-orange);
-  border: none;
-  font-weight: 500;
-  color: white;
-}
-
-.btn-rectangular {
-  min-width: 30rem;
-  min-height: 5.4rem;
-  text-transform: uppercase;
-  display: block;
-  border-radius: 5px;
-  background-image: var(--gradient-orange);
-  border: none;
-  font-weight: 500;
-  color: white;
-}
-
-.big-button:hover,
-.btn-square:hover,
-.btn-rectangular:hover {
-  background-color: var(--green);
-  background-image: none;
-}
-
-.btn-square {
-  background-image: var(--gradient-orange);
-  width: 6.4rem;
-  height: 6.4rem;
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* frames */
-
-.animal-card:before,
-.pick-and-feed__container-image:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: var(--gradient-orange);
-}
-
-.testimonial:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -1px;
-  border-radius: inherit;
-  background: var(--gradient-light-orange);
-}
-
-/* HEADER */
-.header {
-  background-color: black;
-  height: 8rem;
-  position: relative;
-}
-
-.header__content {
-  color: white;
-  display: flex;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: space-between;
-  align-items: center;
-  font-weight: medium;
-}
-
-.header__content--left {
-  display: flex;
-  align-items: center;
-}
-.header__content--left > a {
-  color: white;
-}
-
-.header__logo {
-  display: inline-block;
-  max-width: 8.2rem;
-  text-align: center;
-  position: relative;
-}
-
-.header__title {
-  font-size: 1.9rem;
-  line-height: 120%;
-  border: 1px solid white;
-  border-radius: 2px;
-  padding: 2px;
-}
-
-.header__logo-img {
-  position: absolute;
-  top: 50%;
-  left: 12%;
-}
-
-.header__navigation {
-  display: flex;
-  min-width: 30vw;
-  justify-content: space-around;
-}
-
-.header__navigation-link,
-.header__attribution {
-  font-size: var(--normal-font);
-  list-style: none;
-}
-
-.header__navigation-link > *:link,
-.header__attribution {
-  text-decoration: none;
-  color: white;
-}
-
-.header__navigation-link--active > *:link,
-.header__navigation-link > *:active,
-.header__navigation-link > *:hover {
-  background-image: var(--gradient-orange);
-  background-clip: text;
-  color: transparent;
-}
-
 /* WATCH YOUR FAVOURITE ANIMAL PART */
 
 .watch-your-fav-anim {
@@ -466,6 +239,8 @@ body {
   margin: 1rem auto;
 }
 
+/* TESTIMONIALS */
+
 .testimonials-background {
   background: url(../../assets/images/leav_foto.png) bottom right no-repeat;
 }
@@ -494,8 +269,228 @@ body {
   padding: 2rem;
 }
 
-/*footer */
+/* ----------------------------------------------------- SECTIONS */
 
-.footer {
-  background-color: black;
+/* 1. MAIN ----------------------------------------------- */
+
+/* 2. DONATE -------------------------------------------------- */
+
+/* 2.1 header */
+.donate__panda-header {
+  background-image: url(../../assets/images/Giant\ Panda.png);
+  background-size: cover;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+/* 2.2 donate content */
+.donate {
+  background-image: var(--gradient-light-orange);
+  text-align: center;
+}
+
+.donate__header-big {
+  text-align: left;
+}
+
+.donate__copy {
+  font-weight: 500;
+  line-height: 140%;
+  text-align: left;
+  color: white;
+}
+
+.donate__header-smaller {
+  text-align: left;
+}
+
+.donate__calculator {
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+
+.donate__copy--big {
+  text-align: left;
+}
+
+/* -> panda icon part */
+
+.calculator-panda__number-number {
+  display: block;
+  font-size: 7.2rem;
+  line-height: 80%;
+  font-weight: 500;
+  padding-bottom: 1.6rem;
+}
+
+.calculator-panda__number-per {
+  line-height: 140%;
+}
+
+.calculator-panda__multiplication-left {
+  position: absolute;
+}
+.calculator-panda__multiplication-right {
+  position: relative;
+  left: 0;
+  transform: scaleX(-1);
+}
+
+.form__descr {
+  text-align: left;
+}
+
+.donate__form-currency {
+  font-size: var(--bigger-font);
+  font-weight: bold;
+}
+
+.donate__form-another-am:focus + p {
+  color: var(--green);
+}
+
+.donate__form-another-am:focus::placeholder {
+  color: var(--green);
+  opacity: 1;
+}
+
+.donate__form-radio-btns {
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding-top: 1rem;
+  justify-content: center;
+  gap: 5rem;
+}
+
+/* -> pseudo progress bar */
+
+.donate__form-progress {
+  padding-bottom: 10rem;
+}
+
+.donate__progress-bg {
+  background-color: var(--black-blue);
+  width: 97.5rem;
+  height: 2.7rem;
+  padding: 0 1.5rem;
+  border-radius: 2px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate__form-line {
+  width: 91.5rem;
+  background-color: var(--gray-dark);
+  height: 2px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.donate__form-dots {
+  z-index: 2;
+  width: 91.5rem;
+  display: flex;
+
+  justify-content: space-between;
+  position: absolute;
+}
+
+.donate__form-dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  position: relative;
+  left: 2rem;
+  top: 2rem;
+}
+
+.donate__form-dot--chosen::before {
+  z-index: 10;
+
+  border: 1px solid var(--orange-dark);
+  border-radius: 50%;
+  display: block;
+  content: " ";
+  width: 2.3rem;
+  height: 2.3rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.donate__form-dot--chosen::after {
+  z-index: 10;
+  border: 1px solid var(--orange-dark);
+  border-radius: 50%;
+  display: block;
+  content: " ";
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  left: 50%;
+  top: -2rem;
+  transform: translate(-50%, -50%);
+}
+
+.dot-clickable {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: -2rem;
+  cursor: pointer;
+}
+
+.donate__form-labels {
+  display: flex;
+  width: 102%;
+  justify-content: space-between;
+  position: relative;
+  top: 3rem;
+}
+
+.donate__form-label {
+  font-size: 2.6rem;
+  display: block;
+
+  width: 7rem;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.donate__form-label--chosen {
+  color: var(--orange-darkest);
+}
+
+/* -> input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.donate__btn {
+  margin: 3rem auto;
+}
+
+.donate__form-share {
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+.radio-btns > label {
+  font-size: 1.6rem;
 }

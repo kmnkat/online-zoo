@@ -1,0 +1,102 @@
+/* buttons */
+
+.big-button {
+  min-width: 30rem;
+  min-height: 5.4rem;
+  text-transform: uppercase;
+  display: block;
+  border-radius: 2.5rem;
+  background-image: var(--gradient-orange);
+  border: none;
+  font-weight: 500;
+  color: white;
+  font-size: var(--normal-font);
+}
+
+.btn-rectangular {
+  min-width: 30rem;
+  min-height: 5.4rem;
+  text-transform: uppercase;
+  display: block;
+  border-radius: 5px;
+  background-image: var(--gradient-orange);
+  border: none;
+  font-weight: 500;
+  color: white;
+  font-size: var(--normal-font);
+}
+
+.big-button:hover,
+.btn-square:hover,
+.btn-rectangular:hover {
+  background-color: var(--orange-darkest);
+  background-image: none;
+}
+
+.big-button:active,
+.btn-square:active,
+.btn-rectangular:active {
+  background-color: var(--green);
+  background-image: none;
+}
+
+.btn-square {
+  background-image: var(--gradient-orange);
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-button:disabled,
+.btn-square:disabled,
+.btn-rectangular:disabled {
+  background-color: var(--gray);
+  background-image: none;
+}
+
+.submit-btn {
+  font-size: var(--normal-font);
+  border: 1px solid var(--black-blue);
+  background-color: var(--gray-light);
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+/* links */
+
+/* 1. typical */
+
+a {
+  text-decoration: none;
+}
+.nav-link {
+  color: white;
+}
+
+.nav-link:active,
+.nav-link:hover {
+  background-image: var(--gradient-orange);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 2. icon wrapper link */
+
+.icon-and-text:hover > a {
+  color: var(--green);
+}
+
+.icon-and-text:hover > div {
+  background-color: var(--green);
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+/* frames */
+
+.animal-card:before,
+.pick-and-feed__container-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: var(--gradient-orange);
+}
+
+.testimonial:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: var(--gradient-light-orange);
+}
+
+/*inputs */
+
+.input-field {
+  -moz-appearance: textfield;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px var(--orange-dark) solid;
+  border-radius: 2px;
+  min-height: 4.2rem;
+  font-size: var(--normal-font);
+  outline: none;
+}
+
+.input-field:hover,
+.input-field:focus {
+  border-color: var(--green);
+}
+
+.input-field--alternative {
+  border: 1px var(--gray) solid;
+  min-height: 5.4rem;
+}

@@ -1,0 +1,70 @@
+/* HEADER */
+.header {
+  background-color: black;
+}
+
+.header__content {
+  color: white;
+}
+
+.header__title {
+  font-size: 1.9rem;
+  line-height: 120%;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.header__logo-img {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+}
+
+.active-page {
+  background-image: var(--gradient-orange);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*footer */
+
+.footer {
+  background-color: black;
+}
+
+.footer-content__upper > form {
+  font-size: var(--bigger-font);
+  color: white;
+}
+
+.input-footer {
+  min-width: 22.8rem;
+  color: white;
+  padding-left: 1rem;
+}
+
+.subscribe-btn {
+  min-width: 12.9rem;
+  min-height: 4.2rem;
+}
+
+.one-social {
+  color: white;
+}
+
+.icon-wrapper {
+  background-color: rgba(196, 196, 196, 0.5);
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-and-text > a {
+  color: white;
+}
