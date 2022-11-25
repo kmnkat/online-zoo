@@ -27,6 +27,15 @@
   background: var(--gradient-light-orange);
 }
 
+/*backgrounds */
+
+.white-transparent-background-section {
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 6rem 9.2rem;
+}
+
 /*inputs */
 
 .input-field,

@@ -5,6 +5,10 @@
 .FONT-normal {
   font-size: var(--normal-font);
 }
+
+.FONT-bigger {
+  font-size: var(--bigger-font);
+}
 li {
   list-style: none;
 }
@@ -26,7 +30,6 @@ li {
   font-weight: 400;
   font-size: var(--big-font);
   line-height: 130%;
-  font-size: var(--big-font);
 }
 
 .FONT-subheader-superbig {
@@ -43,4 +46,49 @@ li {
 .FONT-short-description {
   font-size: var(--normal-font);
   line-height: 140%;
+}
+
+.FONT-big {
+  font-size: var(--big-font);
+}
+
+/* specific */
+
+/* MAIN */
+
+.watch-your-fav-anim__heading {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  line-height: 75%;
+  text-align: center;
+  font-size: 10.6rem;
+}
+
+.watch-your-fav-anim__heading--decoration {
+  color: var(--yellow);
+}
+
+.the-backstage__content,
+.the-backstage__heading,
+.the-backstage__subheading {
+  font-weight: lighter;
+}
+
+.the-backstage__copy {
+  line-height: 130%;
+}
+
+/* animal cards */
+
+.animal-card__title {
+  font-size: var(--normal-font);
+  text-transform: uppercase;
+}
+
+/* pick and feed */
+
+.pick-and-feed__copy--bold {
+  font-weight: bolder;
+  display: block;
 }

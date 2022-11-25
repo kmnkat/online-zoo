@@ -90,6 +90,18 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.link-in-text {
+  color: var(--black-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--orange-darkest);
+  text-underline-offset: calc(var(--normal-font) / 2);
+}
+
+.link-in-text:hover,
+.link-in-text:active {
+  text-decoration-color: var(--green);
+}
+
 /* 2. icon wrapper link */
 
 .icon-and-text:hover > a {
