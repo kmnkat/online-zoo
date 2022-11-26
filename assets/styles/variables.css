@@ -59,6 +59,8 @@ html {
   /* FONTSIZE, HEIGHTS  -----------------------------------------------------------*/
 
   --section-height: 116.1rem;
+  --section-height-small-desktop: 94%;
+
   --normal-font: 1.6rem;
   --bigger-font: 2.4rem;
   --big-font: 3.6rem;

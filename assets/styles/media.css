@@ -1,8 +1,111 @@
+/* background smoothly come out */
+
+@media only screen and (max-width: 1600px) {
+  .the-backstage {
+    background-position-x: 140rem;
+  }
+}
+
+/* transition of animal cards */
+
+@media only screen and (max-width: 1440px) {
+  .animal_cards-container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .watch-your-fav-anim__heading-wrapper {
+    max-width: 50%;
+  }
+
+  .watch-your-fav-anim__heading-wrapper:before {
+    width: 33vw;
+    height: 33vw;
+  }
+
+  .watch-your-fav-anim__heading-wrapper > h2 {
+    font-size: 7.2vw;
+  }
+}
+
+/* new arrows for how it works */
+
+@media only screen and (max-width: 768px) {
+  .pick-and-feed__widget {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 1fr;
+  }
+
+  .pick-and-feed__widget > * {
+    justify-self: center;
+  }
+
+  .pick-and-feed__widget > .pick-and-feed__card-arrow {
+    content: url(../../assets/icons/arrow768.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    min-height: 2rem;
+    justify-self: right;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    z-index: 2;
+  }
+
+  .pick-and-feed__card {
+    grid-row-start: 2;
+  }
+}
+
 /* 1000px 1000px 1000px 1000px 1000px 1000px 1000px small desktop  */
 
 @media only screen and (max-width: 1000px) {
-  body {
-        background-color: lightblue;
+  /* global */
+  .subsection {
+    max-width: var(--section-height-small-desktop);
+  }
+
+  /* header */
+  .header__navigation {
+    min-width: 50vw;
+  }
+
+  /* watch your fav anim */
+
+  /* animals cards */
+
+  .animal-card__image-wrapper > img {
+    width: 100%;
+  }
+
+  .animal_cards-container {
+    grid-row-gap: 10rem;
+  }
+
+  .animal-cards__controls {
+    width: 33%;
+  }
+
+  /* pick and feed friend */
+
+  .white-transparent-background-section {
+    padding: 6vw;
+  }
+
+  .pick-and-feed__widget {
+    margin: 0;
+  }
+
+  /* testimonials */
+  .testimonial {
+    min-width: calc(18em - 0.2rem);
+  }
+
+  .testimonials-background {
+    background-position: top 125% right;
+    background-size: 20%;
   }
 }
 
