@@ -1,33 +1,3 @@
-/* TESTIMONIALS */
-
-.testimonials-background {
-  background: url(../../assets/images/leav_foto.png) bottom right no-repeat;
-}
-
-.testimonials {
-  margin: 15rem auto;
-  text-align: center;
-}
-
-.testiomonials__heading {
-  font-size: 3.6rem;
-}
-
-.testimonials-wrapper {
-  display: flex;
-  column-gap: 2rem;
-}
-
-.testimonial {
-  box-sizing: border-box;
-  position: relative;
-  background-color: var(--gray-light);
-  width: 26.8rem;
-  max-height: 39rem;
-  overflow: hidden;
-  padding: 2rem;
-}
-
 /* ----------------------------------------------------- SECTIONS */
 
 /* 1. MAIN ----------------------------------------------- */
@@ -98,14 +68,6 @@
   background-image: var(--gradient-light-orange);
 }
 
-.pick-and-feed__subtitle {
-  text-align: left;
-}
-
-.pick-and-feed__copy {
-  text-align: left;
-}
-
 .pick-and-feed__container-image {
   background-color: white;
   border-radius: 5px;
@@ -113,10 +75,25 @@
   height: 16.8rem;
 }
 
-.pick-and-feed__container-text {
-  text-align: left;
-  display: inline;
-  width: 16.8rem;
+/* 1.5 TESTIMONIALS */
+
+.testimonials-background {
+  background-image: url(../../assets/images/leav_foto.png);
+  background-repeat: no-repeat;
+  background-position: right 160%;
+}
+
+.testimonial {
+  background-color: var(--gray-light);
+  border-radius: 2rem;
+}
+
+.testimonial > p {
+  color: var(--gray);
+}
+
+.testimonial__detailed-info {
+  color: var(--gray-smoky);
 }
 
 /* 2. DONATE -------------------------------------------------- */
@@ -132,26 +109,12 @@
 /* 2.2 donate content */
 .donate {
   background-image: var(--gradient-light-orange);
-  text-align: center;
-}
-
-.donate__header-big {
-  text-align: left;
 }
 
 .donate__copy {
   font-weight: 500;
   line-height: 140%;
-  text-align: left;
   color: white;
-}
-
-.donate__header-smaller {
-  text-align: left;
-}
-
-.donate__copy--big {
-  text-align: left;
 }
 
 /* -> panda icon part */
@@ -175,10 +138,6 @@
   position: relative;
   left: 0;
   transform: scaleX(-1);
-}
-
-.form__descr {
-  text-align: left;
 }
 
 .donate__form-currency {

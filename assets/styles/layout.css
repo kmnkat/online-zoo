@@ -8,7 +8,8 @@
 .animals_cards,
 .pick-and-feed__frame,
 .testimonials,
-.footer-content {
+.footer-content,
+.testimonials {
   max-width: var(--section-height);
 }
 
@@ -37,6 +38,30 @@
 .padding-section-big {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+/* ----------- text align ----------------*/
+
+/* CENTERING */
+
+.testiomonials__heading,
+.donate,
+.pick-and-feed__frame,
+.watch-your-fav-anim__heading {
+  text-align: center;
+}
+
+/* LEFT POSITION */
+
+.donate__header-big,
+.donate__copy,
+.donate__header-smaller,
+.donate__copy--big,
+.pick-and-feed__subtitle,
+.pick-and-feed__copy,
+.testimonial__header,
+.form__descr {
+  text-align: left;
 }
 
 /* ------------------------- HEADER */
@@ -197,7 +222,6 @@
 /* 1.4 PICK AND FEED */
 .pick-and-feed__frame {
   box-sizing: border-box;
-  text-align: center;
 }
 
 .pick-and-feed__widget {
@@ -231,6 +255,49 @@
   text-align: left;
   display: inline;
   width: 16.8rem;
+}
+
+/* 1.5 TESTIMONIALS */
+
+.testimonials-wrapper {
+  max-width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.4rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--bigger-font);
+}
+
+.testimonial {
+  box-sizing: border-box;
+  position: relative;
+  width: 26.8rem;
+  max-height: 40rem;
+  margin: 0.2rem;
+  padding: 1.5rem;
+}
+
+.testimonial > p {
+  display: block;
+  overflow: scroll;
+  max-height: 85%;
+}
+
+.testimonial__header-image-wrapper {
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center 25%;
+  display: block;
+  float: left;
+  margin-right: 1rem;
+}
+
+.testimonial__header {
+  margin-bottom: 1rem;
 }
 
 /* 2. DONATE -------------------------------------------------- */

@@ -1,0 +1,11 @@
+/* 1000px 1000px 1000px 1000px 1000px 1000px 1000px small desktop  */
+
+@media only screen and (max-width: 1000px) {
+  body {
+        background-color: lightblue;
+  }
+}
+
+/* 640px 640px 640px 640px 640px 640px 640px 640px   */
+
+/* 320px 320px 320px 320px 320px 320px 320px 320px  */
