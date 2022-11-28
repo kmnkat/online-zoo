@@ -60,6 +60,7 @@ html {
 
   --section-height: 116.1rem;
   --section-height-small-desktop: 94%;
+  --section-height-tablet: 100vw;
 
   --normal-font: 1.6rem;
   --bigger-font: 2.4rem;

@@ -16,7 +16,6 @@
 
 .watch-your-fav-anim__heading-wrapper:before {
   background-image: var(--gradient-orange);
-
   content: " ";
   width: 46.5rem;
   height: 46.5rem;
@@ -119,7 +118,7 @@
 
 /* 2.1 header */
 .donate__panda-header {
-  background-image: url(../../assets/images/Giant\ Panda.png);
+  background-image: url(../../assets/images/6c4379c95b7fac4756f94f501e2105b7.jpeg);
   background-size: cover;
   background-size: 100%;
   background-position-y: center;

@@ -9,11 +9,14 @@
 /* transition of animal cards */
 
 @media only screen and (max-width: 1440px) {
+  .subsection {
+    padding: 2rem;
+  }
   .animal_cards-container {
     width: 80vw;
     margin: 0 auto;
   }
-
+  /* watch your fav animal steps */
   .watch-your-fav-anim__heading-wrapper {
     max-width: 50%;
   }
@@ -85,7 +88,7 @@
   }
 
   .animal-cards__controls {
-    width: 33%;
+    width: 33vw;
   }
 
   /* pick and feed friend */
@@ -99,6 +102,7 @@
   }
 
   /* testimonials */
+
   .testimonial {
     min-width: calc(18em - 0.2rem);
   }
@@ -111,4 +115,228 @@
 
 /* 640px 640px 640px 640px 640px 640px 640px 640px   */
 
+@media only screen and (max-width: 640px) {
+  /* global */
+  .subsection {
+    max-width: var(--section-height-tablet);
+  }
+  .padding-section-big {
+    padding: 2rem 0;
+  }
+
+  .margin-after-big {
+    margin-bottom: 4rem !important;
+  }
+
+  .margin-after-bigger {
+    margin-bottom: 6rem !important;
+  }
+
+  /* header */
+  .header {
+    height: 3rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  .header__content {
+    padding: 0 2rem;
+  }
+
+  .header__content--left > nav {
+    display: none;
+  }
+
+  .header__logo {
+    width: 4.8rem;
+  }
+
+  .header__title {
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  .header__logo-img {
+    position: absolute;
+    top: 25%;
+    left: 0;
+  }
+
+  .header__content--right {
+    content: url(../../assets/icons/burger_menu.svg);
+  }
+
+  /*footer*/
+
+  .footer-content {
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .footer-content__upper > form {
+    display: none;
+  }
+
+  .footer__navigation {
+    justify-content: space-between;
+  }
+
+  .footer-content__middle {
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .bottom__socials {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    row-gap: 1.5rem;
+  }
+
+  .one-social {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .one-social > a {
+    display: none;
+  }
+
+  .footer-content__bottom {
+    column-gap: 1rem;
+  }
+
+  /* watch ypur fav */
+  .watch-your-fav-anim {
+    margin-top: 0;
+  }
+
+  /* backstage */
+  .the-backstage__content {
+    grid-template-columns: auto auto;
+    grid-gap: 0;
+  }
+
+  .the-backstage__left {
+    background-image: url("../../assets/images/flower_foto1.png");
+    min-width: 8em;
+    grid-column-start: 2;
+    background-position-y: center;
+    background-position-x: left 120%;
+    background-size: contain;
+  }
+
+  .the-backstage__left > * {
+    border: 2px solid green;
+  }
+
+  .the-backstage__right {
+    grid-column-start: 0;
+    grid-row-start: 1;
+    padding: 0 2rem;
+  }
+
+  /* animal cards */
+
+  .animal_cards-container {
+    grid-column-gap: 4rem;
+    overflow: hidden;
+    width: 100vw;
+    margin: 2rem;
+  }
+
+  .animal-card {
+    min-width: calc(100vw / 2 - 2rem * 2);
+  }
+
+  .animal-cards__controls {
+    max-width: 25vw;
+  }
+
+  .animals-cards__background {
+    background-size: 20%;
+  }
+
+  /* pick and feed */
+
+  .pick-and-feed__widget {
+    margin-top: -5rem;
+    padding: 0;
+  }
+
+  /* testimonials */
+
+  .testimonials {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .testimonials-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    overflow: hidden;
+  }
+
+  .testimonial {
+    max-height: 10.9rem;
+  }
+
+  .testimonial > p {
+    display: block;
+    overflow: scroll;
+    max-height: 4ch;
+  }
+
+  .testimonials__button {
+    margin: 0 auto;
+  }
+
+  .testimonials-background {
+    background-position: top 115% right -2%;
+  }
+
+  /* DONATE */
+
+  .donate__panda-header {
+    min-height: 36.5rem;
+    background-position: center;
+    background-size: auto;
+    background-position-x: left 40%;
+  }
+  .donate {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #dot-5000 {
+    display: none;
+  }
+
+  #dot-2000 {
+    display: none;
+  }
+
+  #dot-1000 {
+    display: none;
+  }
+  .donate__form-line {
+    width: 80%;
+  }
+
+  .calculator-panda__panda-icon > img {
+    width: 100%;
+  }
+
+  .donate__calculator {
+    padding: 4rem 0;
+  }
+  .donate__copy--big {
+    text-align: center !important;
+  }
+}
+
 /* 320px 320px 320px 320px 320px 320px 320px 320px  */
+
+@media only screen and (max-width: 320px) {
+}
