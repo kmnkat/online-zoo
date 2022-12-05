@@ -156,10 +156,7 @@
                   ></span>
                   <p class="donate__form-label">$2000</p>
                 </div>
-                <div
-                  class="dot-clickable donate__form-dot--chosen"
-                  id="dot-1000"
-                >
+                <div class="dot-clickable" id="dot-1000">
                   <span class="donate__form-dot-clickable-area">
                     <span class="donate__form-dot"></span
                   ></span>
@@ -202,8 +199,7 @@
                   type="number"
                   placeholder="Another amount"
                   class="donate__form-another-am input-field input-field--alternative"
-                  min="1"
-                  max="9999"
+                  onkeypress="limitNumberOfChar(event, this.value, 4)"
                 />
                 <p class="donate__form-currency">$</p>
               </div>
@@ -260,12 +256,12 @@
               class="nav-link"
               href="https://kmnkat.github.io/online-zoo/pages/main/"
             >
-              <div class="header__logo">
-                <p class="header__title">PetStory Online</p>
+              <div class="footer__logo">
+                <p class="footer__title">PetStory Online</p>
                 <img
                   src="../../assets/icons/bamboo.png"
                   alt=""
-                  class="header__logo-img"
+                  class="footer__logo-img"
                 />
               </div>
             </a>
@@ -373,5 +369,6 @@
         </div>
       </footer>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

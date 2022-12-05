@@ -82,6 +82,11 @@
     min-width: 50vw;
   }
 
+  /* footer */
+
+  .footer-content__bottom {
+    gap: 0;
+  }
   /* watch your fav anim */
 
   /* animals cards */
@@ -117,6 +122,15 @@
   .testimonials-background {
     background-position: top 125% right;
     background-size: 20%;
+  }
+
+  /* DONATE */
+  #dot-5000 {
+    display: none;
+  }
+
+  .donate__form-line {
+    width: 85%;
   }
 }
 
@@ -307,6 +321,7 @@
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
     overflow: hidden;
+    max-width: 100vw;
   }
 
   .testimonial {
@@ -381,11 +396,48 @@
   .big-button,
   .btn-rectangular {
     margin: 0 auto;
-    min-width: 90vw;
-    width: 90vw;
-    max-width: 90vw;
+    min-width: 88vw;
+    width: 88vw;
+    max-width: 88vw;
   }
 
+  /* footer */
+  .footer__logo {
+    display: block;
+    max-width: 100%;
+    min-width: 88vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer__title {
+    border: none;
+    font-size: 6.5vw;
+  }
+
+  .footer__logo-img {
+    position: absolute;
+    top: 0;
+    left: 45vw;
+  }
+
+  .bottom__socials {
+    position: absolute;
+    flex-direction: row;
+    min-width: 88vw;
+    top: 10vw;
+    justify-content: space-evenly;
+    margin: 3vw;
+  }
+
+  .footer-content__bottom {
+    flex-direction: column;
+  }
+
+  .footer__button {
+    position: relative;
+    top: 5vw;
+  }
   /* watch your fav anim */
 
   .watch-your-fav-anim {

@@ -3,11 +3,13 @@
   background-color: black;
 }
 
-.header__content {
+.header__content,
+.footer__content {
   color: white;
 }
 
-.header__title {
+.header__title,
+.footer__title {
   font-size: 1.9rem;
   line-height: 120%;
   border: 1px solid white;
@@ -15,7 +17,8 @@
   padding: 2px;
 }
 
-.header__logo-img {
+.header__logo-img,
+.footer__logo-img {
   position: absolute;
   top: 50%;
   left: 12%;
