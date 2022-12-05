@@ -28,14 +28,16 @@
 
 .big-button:hover,
 .btn-square:hover,
-.btn-rectangular:hover {
+.btn-rectangular:hover,
+.btn-x:hover {
   background-color: var(--orange-darkest);
   background-image: none;
 }
 
 .big-button:active,
 .btn-square:active,
-.btn-rectangular:active {
+.btn-rectangular:active,
+.btn-x:active {
   background-color: var(--green);
   background-image: none;
 }
@@ -49,6 +51,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-x {
+  background-image: var(--gradient-orange);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  display: none;
 }
 
 .big-button:disabled,

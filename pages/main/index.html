@@ -35,7 +35,7 @@
               />
             </div>
           </a>
-          <nav class="header__navigation">
+          <nav class="header__navigation" id="navigation-header-burger">
             <li class="header__navigation-link">
               <a
                 class="nav-link active-page"
@@ -59,6 +59,9 @@
             <li class="header__navigation-link">
               <a class="nav-link" href="#">Contact us</a>
             </li>
+            <div class="header__burger-x">
+              <button class="burger__x btn-x">⨉</button>
+            </div>
           </nav>
         </div>
         <div class="header__content--right FONT-normal">
@@ -72,6 +75,7 @@
       </div>
     </header>
     <main>
+      <div class="overlay" id="overlay"></div>
       <section class="watch-your-fav-anim">
         <div
           class="watch-your-fav-anim__content subsection center-block-content"
@@ -629,5 +633,6 @@
         </div>
       </footer>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

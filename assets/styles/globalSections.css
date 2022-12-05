@@ -3,6 +3,13 @@
   background-color: black;
 }
 
+.header__burger-x {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 3000;
+}
+
 .header__content,
 .footer__content {
   color: white;
@@ -74,4 +81,20 @@
 
 .icon-and-text > a {
   color: white;
+}
+
+/* OVERLAY & BURGER */
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 10;
+}
+
+.showBurgerMenu {
+  transform: translate(0, 0) !important;
 }

@@ -165,8 +165,23 @@
     padding: 0 2rem;
   }
 
-  .header__content--left > nav {
-    display: none;
+  #navigation-header-burger {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    transform: translate(100%, 0);
+    transition: transform 0.2s;
+  }
+
+  .header__content--left > nav > li > .nav-link:link,
+  .header__content--left > nav > li > .nav-link:visited {
+    color: black;
+    margin-left: 1rem;
   }
 
   .header__logo {
@@ -188,6 +203,9 @@
     content: url(../../assets/icons/burger_menu.svg);
   }
 
+  .header--white {
+    background-color: white;
+  }
   /*footer*/
 
   .footer-content {
