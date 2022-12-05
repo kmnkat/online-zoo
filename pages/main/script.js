@@ -1,3 +1,6 @@
+import animals from "../../assets/data/animals.json";
+
+console.log(animals);
 // burger menu
 
 const burgerMenuButton = document.querySelector(".header__content--right");
@@ -20,6 +23,7 @@ const removeOverlay = () => {
 const removeBurger = () => {
   nav.classList.remove("showBurgerMenu");
   header.classList.remove("header--white");
+  removeOverlay();
 };
 
 const addBurger = () => {
@@ -60,3 +64,5 @@ if (screen.width <= 640) {
     });
   });
 }
+
+// adding data to carousel

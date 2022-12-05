@@ -1,0 +1,46 @@
+{
+  "animals": [
+    {
+      "name": "Penguins",
+      "origin": "Native to Antarctica",
+      "image": "../../assets//images/Rectangle 5-1.png",
+      "eating": "carnivore"
+    },
+    {
+      "name": "Pandas",
+      "origin": "Native to Southwest China",
+      "image": "../../assets//images/Rectangle 5-7.png",
+      "eating": "herbivore"
+    },
+    {
+      "name": "Eagles",
+      "origin": "Native to South America",
+      "image": "../../assets//images/Rectangle 5-2.png",
+      "eating": "carnivore"
+    },
+    {
+      "name": "Gorillas",
+      "origin": "Native to Congo",
+      "image": "../../assets//images/Rectangle 5-6.png",
+      "eating": "herbivore"
+    },
+    {
+      "name": "Two-toed Sloth",
+      "origin": "Mesoamerica, South America",
+      "image": "../../assets//images/Rectangle 5-3.png",
+      "eating": "herbivore"
+    },
+    {
+      "name": "Cheetahs",
+      "origin": "Native to Africa",
+      "image": "../../assets//images/Rectangle 5-4.png",
+      "eating": "carnivore"
+    },
+    {
+      "name": "Alligators",
+      "origin": "Native to Southeastern U. S.",
+      "image": "../../assets/images/319c6891c7c51863e307fed9a3e2a6d6.jpeg",
+      "eating": "carnivore"
+    }
+  ]
+}

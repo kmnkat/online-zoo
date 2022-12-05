@@ -101,8 +101,13 @@
 
 .popup-testimonial {
   position: absolute;
-
   background-color: white;
   display: none;
   z-index: 3000;
+}
+
+.btn-x-testimonial {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
