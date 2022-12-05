@@ -98,3 +98,11 @@
 .showBurgerMenu {
   transform: translate(0, 0) !important;
 }
+
+.popup-testimonial {
+  position: absolute;
+
+  background-color: white;
+  display: none;
+  z-index: 3000;
+}
